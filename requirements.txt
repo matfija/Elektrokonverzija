@@ -1,6 +1,6 @@
 bnlearn>=0.3.17
 openpyxl>=3.0.7
 scikit-learn>=0.24.1
-scikit-plot>=0.3.7
+pandas>=1.2.4
 imbalanced-learn>=0.8.0
 umap-learn[plot]>=0.5.1
