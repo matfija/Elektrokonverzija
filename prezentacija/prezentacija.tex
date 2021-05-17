@@ -44,7 +44,7 @@
 \subsection{Goals and methods}
 \begin{frame}{Goals and methods}
 \begin{itemize}
-    \item The aim of this paper was to create a classification model that accurately predicts whether the procedure will be successful in the short term, based on data on the clinical picture, other indications, and drug therapy prescribed to patients undergoing it.
+    \item This paper aimed to create a classification model that accurately predicts whether the procedure will be successful in the short term, based on data on the clinical picture, other indications, and drug therapy prescribed to patients undergoing it.
 
     \item The focus was initially on Bayesian networks, a well-known probabilistic graphical model. They, however, proved inferior to other methods of classification and machine learning, such as the random forest classifier and artificial neural networks.
 \end{itemize}
@@ -78,9 +78,9 @@
 \vspace*{-\baselineskip}
 
 \begin{itemize}
-    \item \lenitem{Dataset contained many irrelevant, mixed and missing values.}
+    \item \lenitem{Dataset contained many irrelevant, mixed-type and missing values.}
 
-    \item \lenitem{Removed -- cardioversion date, medical record number, number in database...}
+    \item \lenitem{Removed -- cardioversion date, medical record number, number in the database...}
 
     \item \lenitem{Missing values -- special value (-1) and neighborhood mean imputation}
 
@@ -94,7 +94,7 @@
 \vspace*{-\baselineskip}
 
 \begin{itemize}
-    \item \lenitem{Even though the reccurence rate of atrial fibrillation is very high, most cardioversions are initially successful.}
+    \item \lenitem{Even though the recurrence rate of atrial fibrillation is very high, most cardioversions are initially successful.}
 
     \item \lenitem{Successful procedures (88.4 \%) were marked as class True and unsuccessful (11.6 \%) as class False.}
 \end{itemize}
@@ -154,9 +154,9 @@
 \begin{itemize}
     \item At the end, dataset dimensions are 147 × 49.
 
-    \item All input variables are of intereger type, with no missing values, while target class is boolean, with somewhat inverted modalities.
+    \item All input variables are of integer type, with no missing values, while target class is boolean, with somewhat inverted modalities.
 
-    \item Dataset is imbalanced with concern to target class.
+    \item Dataset is imbalanced with concern to the target class.
 
     \item This is, of course, a binary classification problem.
 
@@ -171,7 +171,7 @@
 \begin{frame}{Bayesian networks}
 \begin{itemize}
     \item Bayesian networks are a well-known probabilistic graphical model.
-    \item Simply put, BN is a directed acyclic graphs of attributes (vertices), and belief is propagated through its edges.
+    \item Simply put, BN is a directed acyclic graph of attributes (vertices), and belief is propagated through its edges.
     \item Discrete form -- each vertex stores conditional probability distribution table of its attribute, given attributes of its parents
     \item Inference -- starts from known attributes, then propagates to target
 \end{itemize}
@@ -195,7 +195,7 @@
     \item Specific graph structure of the network, such that its branches are directed exclusively from the target to the input attributes.
     \item All such branches exist, and no other.
     \item Implication -- all input variables are independent, given target.
-    \item Very simple, but totally underfitted -- every procedure is predicted as successful, which is equal to absolutely naïve (dummy) classifier.
+    \item Very simple, but totally under-fitted -- every procedure is predicted as successful, which is equal to absolutely naïve (dummy) classifier.
 \end{itemize}
 \end{frame}
 
@@ -212,7 +212,7 @@
 \subsection{Strucutre learning}
 \begin{frame}{Strucutre learning}
 \begin{itemize}
-    \item Hill climbing is used as the optimization techinique for computing the best model graph.
+    \item Hill climbing is used as the optimization technique for computing the best model graph.
     \item Several scoring measures, including Bayesian information criterion
     \item This model is much better on training partition, but it is still bad at test partition, which means it is overfitted.
 \end{itemize}
@@ -231,9 +231,9 @@
 \subsection{Fixed edges}
 \begin{frame}{Fixed edges}
 \begin{itemize}
-    \item Some egdes can be fixed before the start of hill climbing optimization.
+    \item Some edges can be fixed before the start of hill climbing optimization.
     \item It is most sensible to fix edges of type input $\rightarrow$ target.
-    \item Model predictor importance (decision tree, random forest...) and dedrogram helped in finding the best combination.
+    \item Model predictor importance (decision tree, random forest...) and dendrogram helped in finding the best combination.
     \item First try -- patient age, heart rate, total duration of the indicated heart disease, ejection fraction
     \item Second try -- heart rate on admission, oral anticoagulant therapy, left atrial diameter, ejection fraction
 \end{itemize}
@@ -253,7 +253,7 @@
 \subsection{Other models}
 \begin{frame}{Other models}
 \begin{itemize}
-    \item Bayesian networks turned out pretty bad.
+    \item Bayesian networks didn't turn out that good.
     \item Luckily, other models saved the day.
     \item Follows: decision trees, support vector machine...
 \end{itemize}
@@ -290,9 +290,9 @@
 \begin{frame}{Ensembles}
 \begin{itemize}
     \item Finally, it is possible to combine several models into one.
-    \item One way to do so is using simple voting ensembles.
+    \item One way to do so is by using simple voting ensembles.
     \item It is best to favorize important unsuccessful procedures.
-    \item Dicision function -- conjuction (product) of all input estimators:
+    \item Decision function -- conjuction (product) of all input estimators:
     \begin{itemize}
         \item of course, False $\wedge$ False = False,
         \item of course, True $\wedge$ True = True,
