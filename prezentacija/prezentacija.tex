@@ -15,7 +15,7 @@
 \newcommand{\lenitem}[2][.51\linewidth]{\parbox[t]{#1}{\strut #2\strut}}
 
 \title[Electrical cardioversion]{Prediction of short-term success of electrical cardioversion}
-\titlegraphic{\includegraphics[height=3cm,width=7cm]{belbi2021.png}}
+\titlegraphic{\includegraphics[height=3cm,width=7cm]{../slike/belbi2021.png}}
 \author{Lazar Vasović \and Ana Jakovljević}
 \institute[]{Faculty of Mathematics, University of Belgrade\\\url{https://github.com/matfija/Elektrokonverzija}}
 \date[Faculty of Mathematics]{May 20, 2021}
@@ -31,7 +31,7 @@
 \section{Introduction}
 \subsection{The problem}
 \begin{frame}{The problem}
-\mbox{}\hfill\raisebox{-\height}[0pt][0pt]{\includegraphics[width=.42\linewidth]{fibrillation.jpg}}
+\mbox{}\hfill\raisebox{-\height}[0pt][0pt]{\includegraphics[width=.42\linewidth]{../slike/fibrillation.jpg}}
 \vspace*{-\baselineskip}
 
 \begin{itemize}
@@ -51,7 +51,7 @@
 \end{frame}
 
 \begin{frame}{Methods (cont.)}
-\mbox{}\hfill\raisebox{-\height}[0pt][0pt]{\includegraphics[width=.42\linewidth]{data.png}}
+\mbox{}\hfill\raisebox{-\height}[0pt][0pt]{\includegraphics[width=.42\linewidth]{../slike/data.png}}
 \vspace*{-\baselineskip}
 
 \begin{itemize}
@@ -74,7 +74,7 @@
 
 \subsection{Preprocessing}
 \begin{frame}{Preprocessing}
-\mbox{}\hfill\raisebox{-\height}[0pt][0pt]{\includegraphics[width=.42\linewidth]{prep.png}}
+\mbox{}\hfill\raisebox{-\height}[0pt][0pt]{\includegraphics[width=.42\linewidth]{../slike/prep.png}}
 \vspace*{-\baselineskip}
 
 \begin{itemize}
@@ -90,7 +90,7 @@
 
 \subsection{Target class}
 \begin{frame}{Target class}
-\mbox{}\hfill\raisebox{-\height}[0pt][0pt]{\includegraphics[width=.42\linewidth]{target.png}}
+\mbox{}\hfill\raisebox{-\height}[0pt][0pt]{\includegraphics[width=.42\linewidth]{../slike/target.png}}
 \vspace*{-\baselineskip}
 
 \begin{itemize}
@@ -105,18 +105,18 @@
 \begin{columns}[c]
     \column{.5\textwidth}
     \begin{center}
-            \includegraphics[width=\textwidth]{pca.png}
+            \includegraphics[width=\textwidth]{../slike/pca.png}
         \end{center}
     \column{.5\textwidth}
         \begin{center}
-             \includegraphics[width=\textwidth]{umap.png} 
+             \includegraphics[width=\textwidth]{../slike/umap.png} 
         \end{center}
 \end{columns}
 \end{frame}
 
 \subsection{Feature importance}
 \begin{frame}{Feature importance}
-\mbox{}\hfill\raisebox{-\height}[0pt][0pt]{\includegraphics[width=.42\linewidth]{something.jpg}}
+\mbox{}\hfill\raisebox{-\height}[0pt][0pt]{\includegraphics[width=.42\linewidth]{../slike/something.jpg}}
 \vspace*{-\baselineskip}
 
 \begin{itemize}
@@ -146,7 +146,7 @@
 \end{frame}
 
 \begin{frame}{Correlation dendrogram}
-\includegraphics[width=\textwidth]{dendro.png}
+\includegraphics[width=\textwidth]{../slike/dendro.png}
 \end{frame}
 
 \subsection{To sum up}
@@ -178,7 +178,7 @@
 \end{frame}
 
 \begin{frame}{Binning}
-\mbox{}\hfill\raisebox{-\height}[0pt][0pt]{\includegraphics[width=.42\linewidth]{binning.jpeg}}
+\mbox{}\hfill\raisebox{-\height}[0pt][0pt]{\includegraphics[width=.42\linewidth]{../slike/binning.jpeg}}
 \vspace*{-\baselineskip}
 
 \begin{itemize}
@@ -199,11 +199,11 @@
 \end{frame}
 
 \begin{frame}{Model graph}
-\includegraphics[width=\textwidth]{naive1.png}
+\includegraphics[width=\textwidth]{../slike/naive1.png}
 \end{frame}
 
 \begin{frame}{Test performance}
-\includegraphics[width=\textwidth]{naive2.png}
+\includegraphics[width=\textwidth]{../slike/naive2.png}
 \end{frame}
 
 \subsection{Structure learning}
@@ -216,11 +216,11 @@
 \end{frame}
 
 \begin{frame}{Model graph}
-\includegraphics[width=\textwidth]{learn1.png}
+\includegraphics[width=\textwidth]{../slike/learn1.png}
 \end{frame}
 
 \begin{frame}{Test performance}
-\includegraphics[width=\textwidth]{learn2.png}
+\includegraphics[width=\textwidth]{../slike/learn2.png}
 \end{frame}
 
 \subsection{Fixed edges}
@@ -235,11 +235,11 @@
 \end{frame}
 
 \begin{frame}{Model graph}
-\includegraphics[width=\textwidth]{fixed1.png}
+\includegraphics[width=\textwidth]{../slike/fixed1.png}
 \end{frame}
 
 \begin{frame}{Test performance}
-\includegraphics[width=\textwidth]{fixed2.png}
+\includegraphics[width=\textwidth]{../slike/fixed2.png}
 \end{frame}
 
 \section{Other models}
@@ -254,33 +254,33 @@
 
 \subsection{Decision tree}
 \begin{frame}{Decision tree}
-\includegraphics[width=\textwidth]{tree.png}
+\includegraphics[width=\textwidth]{../slike/tree.png}
 \end{frame}
 
 \begin{frame}{Tree pruning}
 \begin{center}
-    \includegraphics[width=.75\textwidth]{pruning.png}
+    \includegraphics[width=.75\textwidth]{../slike/pruning.png}
 \end{center}
 \end{frame}
 
 \subsection{Random forest}
 \begin{frame}{Random forest}
-\includegraphics[width=\textwidth]{forest.png}
+\includegraphics[width=\textwidth]{../slike/forest.png}
 \end{frame}
 
 \subsection{Complement naïve Bayes}
 \begin{frame}{Complement naïve Bayes}
-\includegraphics[width=\textwidth]{cnb.png}
+\includegraphics[width=\textwidth]{../slike/cnb.png}
 \end{frame}
 
 \subsection{Multilayer perceptron}
 \begin{frame}{Multilayer perceptron}
-\includegraphics[width=\textwidth]{mlp.png}
+\includegraphics[width=\textwidth]{../slike/mlp.png}
 \end{frame}
 
 \subsection{Support vector classifier}
 \begin{frame}{Support vector classifier}
-\includegraphics[width=\textwidth]{svc.png}
+\includegraphics[width=\textwidth]{../slike/svc.png}
 \end{frame}
 
 \subsection{Ensembles}
@@ -300,15 +300,15 @@
 \end{frame}
 
 \begin{frame}{MLP-SVC ensemble}
-\includegraphics[width=\textwidth]{mlpsvc.png}
+\includegraphics[width=\textwidth]{../slike/mlpsvc.png}
 \end{frame}
 
 \begin{frame}{RFC-CNB ensemble}
-\includegraphics[width=\textwidth]{forcnb.png}
+\includegraphics[width=\textwidth]{../slike/forcnb.png}
 \end{frame}
 
 \begin{frame}{MLP-CNB ensemble}
-\includegraphics[width=\textwidth]{mlpcnb.png}
+\includegraphics[width=\textwidth]{../slike/mlpcnb.png}
 \end{frame}
 
 \begin{frame}[fragile]{MLP-CNB classification report}
@@ -356,7 +356,7 @@ weighted avg       0.94      0.87      0.88        52
 \end{frame}
 
 \begin{frame}{MLP-CNB flowchart}
-\includegraphics[width=\textwidth]{flowchart.png}
+\includegraphics[width=\textwidth]{../slike/flowchart.png}
 \end{frame}
 
 \section{Conclusion}
