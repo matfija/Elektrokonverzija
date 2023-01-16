@@ -8,7 +8,7 @@ Ipak, kako one nisu bile uspešne, primenjene su i ostale metode klasifikacije i
 
 Podaci potiču iz Pejsmejker centra Kliničkog centra Srbije. Po dogovoru sa asistentom, nisu postavljeni na repozitorijum, ali su delovi dostupni u sveskama.
 
-Rad je predstavljen na konferenciji [Belgrade BioInformatics Conference 2021](https://belbi.bg.ac.rs/) (BelBI2021) u okviru poster sesije. Moguće je pronaći ga na [linku](https://belbi.bg.ac.rs/?p=1625), kao i u [knjizi apstrakata](https://belbi.bg.ac.rs/wp-content/uploads/2021/06/Book_of_Abstracts_2021-1.pdf).
+Rad je predstavljen na konferenciji [Belgrade BioInformatics Conference 2021](http://euler.matf.bg.ac.rs/belbi2020/) (BelBI2021) u okviru poster sesije. Moguće je pronaći ga na [linku](http://euler.matf.bg.ac.rs/belbi2020/?p=1625), kao i u [knjizi apstrakata](https://belbi.bg.ac.rs/wp-content/uploads/2021/06/Book_of_Abstracts_2021-1.pdf).
 
 ## Članovi tima :girl::boy:
 * [Ana Jakovljević](https://github.com/ana-jakovljevic), 1025/2020
